@@ -5,82 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículum - Alexander Soto</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <h1>
-          Alexander Nicolas Soto Bozo
-          <img src="1.png" alt="Foto de Alexander" class="profile-img" />
-        </h1>
-        <p>19 años | Fecha de Nacimiento: 20-11-2004</p>
+        <img src="1.png" alt="Foto de Alexander" class="profile-img" />
+        <div class="header-text">
+          <h1>Alexander Nicolas Soto Bozo</h1>
+          <p>19 años | Fecha de Nacimiento: 20-11-2004</p>
+        </div>
       </header>
 
-      <aside class="sidebar">
+      <nav class="navbar">
+        <h2>Datos de Contacto</h2>
+        <ul>
+          <li><strong>Dirección:</strong> Santiago, Chile</li>
+          <li><strong>Teléfono:</strong> +123 456 789</li>
+          <li><strong>Email:</strong> Alexander.Soto.Bozo@gmail.com</li>
+        </ul>
         <section class="section">
-          <h2>Datos de Contacto</h2>
+          <h2>Estudios</h2>
           <ul>
-            <li><strong>Dirección:</strong> Ciudad, País</li>
-            <li><strong>Teléfono:</strong> +123 456 789</li>
-            <li><strong>Email:</strong> correo@example.com</li>
+            <li>
+              <strong>Técnico Nivel Medio de Electrónica</strong> - Liceo
+              técnico profesional GGH, Ñuñoa (2019 - 2022)
+            </li>
+            <li>
+              <strong>Enseñanza media</strong> - Liceo tecnico profesional GGH,
+              Ñuñoa (2019 - 2022)
+            </li>
           </ul>
         </section>
-
-        <section class="section">
-          <h2>Hobbies</h2>
-          <ul>
-            <li>Electrónica DIY</li>
-            <li>Desarrollo de videojuegos</li>
-            <li>Practicar senderismo</li>
-          </ul>
-          <img src="2.png" alt="Icono de Hobbies" class="profile-img" />
-        </section>
-      </aside>
+        <img src="2.png" class="img-fluid" alt="Responsive image" />
+      </nav>
 
       <main class="main">
         <section class="section">
           <h2>Perfil Profesional</h2>
           <p>
-            Soy un estudiante apasionado por la electrónica y la tecnología, con
-            experiencia en desarrollo web y entusiasmo por aprender nuevas
-            tecnologías.
+            Fui técnico en electrónica en Marley Coffee, con experiencia en
+            mantenimiento de maquinas cafeteras
           </p>
-        </section>
-
-        <section class="section">
-          <h2>Estudios</h2>
-          <ul>
-            <li>
-              <strong>Técnico Nivel Medio de Electrónica</strong> Liceo tecnico profesional
-            </li>
-            <li>
-              <strong>Bachillerato en Ciencias</strong> - Instituto.., Ciudad Santiago
-              (2019 - 2022)
-            </li>
-          </ul>
-          <img src="3.png" alt="Icono de Estudios" class="profile-img" />
         </section>
 
         <section class="section">
           <h2>Experiencia Laboral</h2>
           <article>
-            <h3>Tecnico electronico</h3>
-            <p><em>Santiago, Chile | 2023 - Presente</em></p>
+            <h3>Técnico en Electrónica - Marley Coffee - 2023</h3>
+            <p><em>Santiago, Chile | 16/1/2023 - 20/12-2023</em></p>
             <ul>
-              <li>
-                Reparador de maquinas Marley Coffe
-              </li>
-              <li>
-                Colaboración en proyectos de equipo para mejorar la experiencia
-                del usuario.
-              </li>
-              <li>Pruebas y mantenimiento de maquinas.</li>
+              <li>Mantencion de maquinaria</li>
+              <li>Reparacion de Circuitos electronicos</li>
+              <li>Restauracion de instrumentacion electronica</li>
             </ul>
           </article>
 
           <article>
-            <h3>Prácticas en Marketing Digitas</h3>
-            <p><em>Ciudad, País | 2023 - 2024</em></p>
+            <h3>Prácticas en Marketing Digital - Agencia</h3>
+            <p><em>Santiago, Chile | 2022 - 2023</em></p>
             <ul>
               <li>Creación de contenido para redes sociales y blogs.</li>
               <li>
@@ -90,15 +82,35 @@
             </ul>
           </article>
         </section>
+
+        <section class="section">
+          <h2>Hobbies:</h2>
+          <li>Electrónica</li>
+          <li>Acampar</li>
+          <li>Practicar senderismo</li>
+        </section>
       </main>
 
-      <footer class="footer">
-        <p>
-          Visita mi repositorio en GitHub:
-          <a href="https://github.com/Thokken/git_basics" style="color: white"
-            >github.com/Thokken/git_basics</a
-          >
-        </p>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a
+              href="https://github.com/Thokken/git_basics"
+              class="nav-link px-2 text-body-secondary"
+              >Repositorio en Github</a
+            >
+          </li>
+        </ul>
       </footer>
     </div>
   </body>
